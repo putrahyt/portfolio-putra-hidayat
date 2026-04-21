@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Putra Hidayat — Creative Developer & Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════ NOISE OVERLAY ═══════════════ -->
+  <div class="noise"></div>
+
+  <!-- ═══════════════ NAVBAR ═══════════════ -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">PH<span class="logo-dot">.</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#gallery">Design Work</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="#contact" class="nav-cta">Hire Me</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════════════ HERO ═══════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-blobs">
+      <div class="blob blob-pink"></div>
+      <div class="blob blob-cyan"></div>
+      <div class="blob blob-yellow"></div>
+    </div>
+
+    <div class="hero-main">
+      <div class="hero-label">
+        <span class="pulse-dot"></span> Available for Work
+      </div>
+      <h1 class="hero-name">
+        <span class="name-line1">PUTRA</span>
+        <span class="name-line2">HIDAYAT<span class="name-accent">.</span></span>
+      </h1>
+      <div class="hero-tagline">
+        <span id="typed"></span><span class="cursor">|</span>
+      </div>
+      <p class="hero-bio">
+        Lulusan <em>Sistem Komputer</em> di Universitas Pembangunan Panca Budi.
+        Pemahaman dalam pengembangan web dan desain grafis. Berpengalaman aktif di organisasi kampus seperti kepanitiaan dan kegiatan lainnya di lingkungan kampus.
+      </p>
+      <div class="hero-btns">
+        <a href="#gallery" class="btn btn-fill">Lihat Karya</a>
+        <a href="#contact" class="btn btn-ghost">Hubungi Saya ↗</a>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ═══════════════ ABOUT ═══════════════ -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-wrap">
+        <div class="about-left reveal">
+          <div class="about-img-block">
+            <div class="about-avatar">
+              <img src="files/pasfoto 3x4.jpg" alt="Putra Hidayat" class="avatar-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+              <div class="avatar-text" style="display:none">PH</div>
+            </div>
+            <div class="about-img-tag tag-yellow">Sistem Komputer</div>
+            <div class="about-img-tag tag-pink">UNPAB</div>
+            <div class="about-img-tag tag-cyan">Medan, ID</div>
+          </div>
+        </div>
+        <div class="about-right">
+          <div class="section-eyebrow reveal">Who I Am</div>
+          <h2 class="section-title reveal">Saya seorang <br/><span class="highlight-text">Creative Developer</span><br/>yang juga desainer.</h2>
+          <p class="about-text reveal">Halo! Saya <strong>Putra Hidayat</strong>, lahir dan besar di <strong>Kota Medan</strong>. Seorang mahasiswa Sistem Komputer yang punya passion besar di dunia <strong>teknologi, web development</strong>, dan <strong>desain grafis</strong>. Di waktu luang, saya suka eksplorasi tools baru, ngoprek desain, atau main game buat refreshing.</p>
+          <p class="about-text reveal">Ke depannya, saya punya ambisi untuk berkembang sebagai <strong>IT profesional</strong>, mendalami dunia <strong>desain grafis</strong>, atau bahkan membangun <strong>usaha sendiri</strong> di bidang digital.</p>
+          <div class="about-numbers reveal">
+            <div class="num-item">
+              <span class="big-num">S1</span>
+              <span class="num-desc">Sistem Komputer</span>
+            </div>
+            <div class="num-divider"></div>
+            <div class="num-item">
+              <span class="big-num">3<span class="num-plus">+</span></span>
+              <span class="num-desc">Project Web</span>
+            </div>
+            <div class="num-divider"></div>
+            <div class="num-item">
+              <span class="big-num">15<span class="num-plus">+</span></span>
+              <span class="num-desc">Desain Grafis</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ SKILLS ═══════════════ -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-eyebrow">What I Do</div>
+        <h2 class="section-title">Skills & <span class="highlight-text">Kemampuan</span></h2>
+      </div>
+
+      <div class="skills-cols reveal">
+
+        <div class="skill-col">
+          <div class="skill-col-header">
+            <span class="skill-col-num">01</span>
+            <h3>Web Development</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="stag stag-blue">HTML</span>
+            <span class="stag stag-blue">CSS</span>
+            <span class="stag stag-violet">PHP</span>
+            <span class="stag stag-violet">Laravel</span>
+            <span class="stag stag-violet">Laragon</span>
+            <span class="stag stag-violet">Web Hosting</span>
+          </div>
+          <p class="skill-desc">Membangun website dan aplikasi web menggunakan HTML, CSS, PHP, dan framework Laravel untuk sistem yang scalable.</p>
+        </div>
+
+        <div class="skill-col">
+          <div class="skill-col-header">
+            <span class="skill-col-num">02</span>
+            <h3>Version Control & Tools</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="stag stag-orange">Git</span>
+            <span class="stag stag-orange">GitHub</span>
+            <span class="stag stag-orange">Visual Studio Code</span>
+            <span class="stag stag-green">MS Word</span>
+            <span class="stag stag-green">MS Excel</span>
+            <span class="stag stag-green">PowerPoint</span>
+          </div>
+          <p class="skill-desc">Mengelola project dengan version control dan mampu menggunakan tools produktivitas standar industri.</p>
+        </div>
+
+        <div class="skill-col">
+          <div class="skill-col-header">
+            <span class="skill-col-num">03</span>
+            <h3>Design & Creative</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="stag stag-pink">Photoshop</span>
+            <span class="stag stag-pink">Canva</span>
+            <span class="stag stag-yellow">Filmora</span>
+          </div>
+          <p class="skill-desc">Membuat konten visual yang menarik mulai dari poster, banner, social media kit, hingga video editing profesional.</p>
+        </div>
+
+      </div>
+
+      <!-- Big Skill Pills -->
+      <!-- <div class="big-pills reveal">
+        <span class="big-pill pill-a">HTML5</span>
+        <span class="big-pill pill-b">CSS3</span>
+        <span class="big-pill pill-c">PHP</span>
+        <span class="big-pill pill-d">Laravel</span>
+        <span class="big-pill pill-e">Git & GitHub</span>
+        <span class="big-pill pill-f">Photoshop</span>
+        <span class="big-pill pill-g">Canva</span>
+        <span class="big-pill pill-h">Filmora</span>
+        <span class="big-pill pill-i">MS Office</span>
+      </div> -->
+    </div>
+  </section>
+
+  <!-- ═══════════════ GALLERY / DESIGN WORK ═══════════════ -->
+  <section class="gallery" id="gallery">
+    <div class="gallery-header reveal">
+      <div class="section-eyebrow">Creative Works</div>
+      <h2 class="section-title">Design <span class="highlight-text">Gallery</span></h2>
+      <p class="gallery-sub">Kumpulan karya desain grafis & visual — berbagai format dan ukuran</p>
+    </div>
+
+    <!-- Filter Tabs -->
+    <div class="gallery-filters reveal">
+      <button class="filter-btn active" data-filter="all">Semua</button>
+      <button class="filter-btn" data-filter="poster">Poster</button>
+      <button class="filter-btn" data-filter="banner">Banner / Spanduk</button>
+      <button class="filter-btn" data-filter="sosmed">Social Media</button>
+      <button class="filter-btn" data-filter="branding">Branding</button>
+    </div>
+
+    <!-- Masonry Grid -->
+    <div class="masonry-grid" id="masonryGrid">
+
+      <!-- 1:1 Square items -->
+      <div class="masonry-item ratio-1x1" data-cat="sosmed">
+        <div class="design-card card-col1">
+          <div class="design-placeholder">
+            <span class="design-emoji">🎨</span>
+            <span class="design-label">Instagram Post</span>
+          </div>
+          <div class="design-info">
+            <span class="design-title">Social Media Kit Vol.1</span>
+            <span class="design-size">1080 × 1080 px</span>
+          </div>
+          <div class="design-hover">
+            <span>Lihat Detail ↗</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Landscape / Banner -->
+      <div class="masonry-item ratio-wide" data-cat="banner">
+        <div class="design-card card-col2">
+          <div class="design-placeholder">
+            <span class="design-emoji">📢</span>
+            <span class="design-label">Spanduk Event</span>
+          </div>
+          <div class="design-info">
+            <span class="design-title">Banner Seminar Kampus</span>
+            <span class="design-size">3 × 1 Meter</span>
+          </div>
+          <div class="design-hover">
+            <span>Lihat Detail ↗</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Poster Portrait -->
+      <div class="masonry-item ratio-portrait" data-cat="poster">
+        <div class="design-card card-col3">
+          <div class="design-placeholder">
+            <span class="design-emoji">🗓</span>
+            <span class="design-label">Event Poster</span>
+          </div>
+          <div class="design-info">
+            <span class="design-title">Poster Kegiatan Organisasi</span>
+            <span class="design-size">A3 — 297 × 420 mm</span>
+          </div>
+          <div class="design-hover">
+            <span>Lihat Detail ↗</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Square 1:1 -->
+      <div class="masonry-item ratio-1x1" data-cat="branding">
+        <div class="design-card card-col4">
+          <div class="design-placeholder">
+            <span class="design-emoji">🏷</span>
+            <span class="design-label">Logo Design</span>
+          </div>
+          <div class="design-info">
+            <span class="design-title">Branding Identity Kit</span>
+            <span class="design-size">Vector — SVG / PNG</span>
+          </div>
+          <div class="design-hover">
+            <span>Lihat Detail ↗</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Very wide / billboard -->
+      <div class="masonry-item ratio-billboard" data-cat="banner">
+        <div class="design-card card-col5">
+          <div class="design-placeholder">
+            <span class="design-emoji">🖼</span>
+            <span class="design-label">Baliho</span>
+          </div>
+          <div class="design-info">
+            <span class="design-title">Baliho Penerimaan Mahasiswa</span>
+            <span class="design-size">4 × 2 Meter</span>
+          </div>
+          <div class="design-hover">
+            <span>Lihat Detail ↗</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Square -->
+      <div class="masonry-item ratio-1x1" data-cat="sosmed">
+        <div class="design-card card-col6">
+          <div class="design-placeholder">
+            <span class="design-emoji">📸</span>
+            <span class="design-label">Story Template</span>
+          </div>
+          <div class="design-info">
+            <span class="design-title">Instagram Story Set</span>
+            <span class="design-size">1080 × 1920 px</span>
+          </div>
+          <div class="design-hover">
+            <span>Lihat Detail ↗</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Landscape medium -->
+      <div class="masonry-item ratio-wide" data-cat="poster">
+        <div class="design-card card-col7">
+          <div class="design-placeholder">
+            <span class="design-emoji">🎓</span>
+            <span class="design-label">Backdrop Wisuda</span>
+          </div>
+          <div class="design-info">
+            <span class="design-title">Backdrop Acara Wisuda</span>
+            <span class="design-size">6 × 3 Meter</span>
+          </div>
+          <div class="design-hover">
+            <span>Lihat Detail ↗</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portrait -->
+      <div class="masonry-item ratio-portrait" data-cat="branding">
+        <div class="design-card card-col8">
+          <div class="design-placeholder">
+            <span class="design-emoji">📄</span>
+            <span class="design-label">Sertifikat</span>
+          </div>
+          <div class="design-info">
+            <span class="design-title">Template Sertifikat Event</span>
+            <span class="design-size">A4 Landscape</span>
+          </div>
+          <div class="design-hover">
+            <span>Lihat Detail ↗</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Wide -->
+      <div class="masonry-item ratio-wide" data-cat="sosmed">
+        <div class="design-card card-col9">
+          <div class="design-placeholder">
+            <span class="design-emoji">💻</span>
+            <span class="design-label">LinkedIn Banner</span>
+          </div>
+          <div class="design-info">
+            <span class="design-title">LinkedIn Profile Banner</span>
+            <span class="design-size">1584 × 396 px</span>
+          </div>
+          <div class="design-hover">
+            <span>Lihat Detail ↗</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="gallery-note reveal">
+      <p>* Gambar placeholder — ganti dengan file desain asli kamu. <a href="#contact">Minta desain custom →</a></p>
+    </div>
+  </section>
+
+  <!-- ═══════════════ PROJECTS ═══════════════ -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-eyebrow">Dev Projects</div>
+        <h2 class="section-title">Project <span class="highlight-text">Web</span></h2>
+      </div>
+
+      <div class="proj-grid">
+
+        <!-- Project 1 — Featured / Big -->
+        <div class="proj-card proj-card-featured reveal">
+          <div class="proj-mockup">
+            <div class="mockup-browser">
+              <div class="mockup-bar">
+                <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+                <div class="mockup-url">sistoko.local/shop</div>
+              </div>
+              <div class="mockup-screen mockup-shop">
+                <div class="ms-navbar"><div class="ms-logo"></div><div class="ms-nav-items"><span></span><span></span><span></span></div><div class="ms-cart">🛒</div></div>
+                <div class="ms-hero-shop">
+                  <div class="ms-hero-text">
+                    <div class="ms-h1"></div>
+                    <div class="ms-h2"></div>
+                    <div class="ms-btn-shop">Belanja Sekarang</div>
+                  </div>
+                  <div class="ms-hero-img">🛍️</div>
+                </div>
+                <div class="ms-products">
+                  <div class="ms-prod-card"><div class="ms-prod-img" style="background:linear-gradient(135deg,#ffd6ec,#f8a0c8)">👟</div><div class="ms-prod-info"><div class="ms-prod-name"></div><div class="ms-prod-price">Rp 299.000</div></div></div>
+                  <div class="ms-prod-card"><div class="ms-prod-img" style="background:linear-gradient(135deg,#cef4ff,#7dd8f5)">👜</div><div class="ms-prod-info"><div class="ms-prod-name"></div><div class="ms-prod-price">Rp 449.000</div></div></div>
+                  <div class="ms-prod-card"><div class="ms-prod-img" style="background:linear-gradient(135deg,#fff3b0,#ffd96a)">⌚</div><div class="ms-prod-info"><div class="ms-prod-name"></div><div class="ms-prod-price">Rp 199.000</div></div></div>
+                </div>
+              </div>
+            </div>
+            <div class="proj-num-badge">01</div>
+          </div>
+          <div class="proj-content">
+            <div class="proj-cat-tag">E-Commerce</div>
+            <h3 class="proj-title">Sistem Toko Online</h3>
+            <p class="proj-desc">Aplikasi e-commerce lengkap dengan manajemen produk, keranjang belanja, sistem checkout, dan panel admin berbasis Laravel.</p>
+            <div class="proj-tech">
+              <span>Laravel</span><span>PHP</span><span>MySQL</span><span>Bootstrap</span>
+            </div>
+            <div class="proj-links">
+              <a href="#" class="proj-btn" target="_blank">Live Demo ↗</a>
+              <a href="https://github.com/" class="proj-btn proj-btn-ghost" target="_blank">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="proj-card reveal">
+          <div class="proj-mockup">
+            <div class="mockup-browser mockup-sm">
+              <div class="mockup-bar">
+                <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+                <div class="mockup-url">siswa.local/dashboard</div>
+              </div>
+              <div class="mockup-screen mockup-dashboard">
+                <div class="ms-sidebar">
+                  <div class="ms-sb-logo"></div>
+                  <div class="ms-sb-item active"></div>
+                  <div class="ms-sb-item"></div>
+                  <div class="ms-sb-item"></div>
+                  <div class="ms-sb-item"></div>
+                </div>
+                <div class="ms-main">
+                  <div class="ms-stats-row">
+                    <div class="ms-stat-box" style="background:linear-gradient(135deg,#e8007a,#6d28d9)"><span class="ms-stat-num">248</span><span class="ms-stat-lbl">Siswa</span></div>
+                    <div class="ms-stat-box" style="background:linear-gradient(135deg,#0099cc,#1d4ed8)"><span class="ms-stat-num">12</span><span class="ms-stat-lbl">Kelas</span></div>
+                    <div class="ms-stat-box" style="background:linear-gradient(135deg,#00a878,#0099cc)"><span class="ms-stat-num">96%</span><span class="ms-stat-lbl">Hadir</span></div>
+                  </div>
+                  <div class="ms-table-preview">
+                    <div class="ms-table-row ms-table-head"><span>Nama</span><span>Kelas</span><span>Nilai</span></div>
+                    <div class="ms-table-row"><span></span><span>X-A</span><span class="ms-grade green">A</span></div>
+                    <div class="ms-table-row"><span></span><span>X-B</span><span class="ms-grade yellow">B+</span></div>
+                    <div class="ms-table-row"><span></span><span>XI-A</span><span class="ms-grade green">A-</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="proj-num-badge">02</div>
+          </div>
+          <div class="proj-content">
+            <div class="proj-cat-tag proj-cat-blue">Education</div>
+            <h3 class="proj-title">Sistem Manajemen Siswa</h3>
+            <p class="proj-desc">CRUD data siswa, nilai, absensi dengan antarmuka responsif dan dashboard admin lengkap.</p>
+            <div class="proj-tech">
+              <span>PHP</span><span>HTML/CSS</span><span>Bootstrap</span><span>MySQL</span>
+            </div>
+            <div class="proj-links">
+              <a href="#" class="proj-btn" target="_blank">Live Demo ↗</a>
+              <a href="https://github.com/" class="proj-btn proj-btn-ghost" target="_blank">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="proj-card reveal">
+          <div class="proj-mockup">
+            <div class="mockup-browser mockup-sm">
+              <div class="mockup-bar">
+                <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+                <div class="mockup-url">produk-landing.vercel.app</div>
+              </div>
+              <div class="mockup-screen mockup-landing">
+                <div class="ms-lp-hero">
+                  <div class="ms-lp-blob1"></div>
+                  <div class="ms-lp-blob2"></div>
+                  <div class="ms-lp-content">
+                    <div class="ms-lp-tag">✨ New Product</div>
+                    <div class="ms-lp-h1"></div>
+                    <div class="ms-lp-h2"></div>
+                    <div class="ms-lp-cta">Get Started →</div>
+                  </div>
+                  <div class="ms-lp-visual">📱</div>
+                </div>
+                <div class="ms-lp-features">
+                  <div class="ms-feat">⚡<span></span></div>
+                  <div class="ms-feat">🎯<span></span></div>
+                  <div class="ms-feat">🔒<span></span></div>
+                </div>
+              </div>
+            </div>
+            <div class="proj-num-badge">03</div>
+          </div>
+          <div class="proj-content">
+            <div class="proj-cat-tag proj-cat-orange">Marketing</div>
+            <h3 class="proj-title">Landing Page Produk</h3>
+            <p class="proj-desc">Halaman pemasaran modern dan responsif dengan animasi scroll, visual menarik, dan optimasi konversi tinggi.</p>
+            <div class="proj-tech">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+            </div>
+            <div class="proj-links">
+              <a href="#" class="proj-btn" target="_blank">Live Demo ↗</a>
+              <a href="https://github.com/" class="proj-btn proj-btn-ghost" target="_blank">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ EDUCATION ═══════════════ -->
+  <section class="education" id="education">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-eyebrow">Background</div>
+        <h2 class="section-title">Edukasi & <span class="highlight-text">Organisasi</span></h2>
+      </div>
+
+      <div class="edu-grid">
+
+        <div class="edu-card edu-card-main reveal">
+          <div class="edu-year">2021 — Sekarang</div>
+          <div class="edu-icon">🎓</div>
+          <h3>S1 Sistem Komputer</h3>
+          <p class="edu-place">Universitas Pembangunan Panca Budi</p>
+          <p>Fokus pada arsitektur komputer, pemrograman web, jaringan, dan sistem operasi. Aktif mengerjakan project akademik dan mandiri.</p>
+        </div>
+
+        <div class="edu-card reveal">
+          <div class="edu-year">2019 — 2021</div>
+          <div class="edu-icon">🏫</div>
+          <h3>SMK Negeri 1 Medan</h3>
+          <p class="edu-place">Teknik Komputer & Jaringan</p>
+          <p>Mempelajari dasar-dasar jaringan komputer, pemrograman web, dan hardware. Lulus dengan predikat baik.</p>
+        </div>
+
+        <div class="edu-card reveal">
+          <div class="edu-year">2022 — Sekarang</div>
+          <div class="edu-icon">🤝</div>
+          <h3>Anggota Aktif BEM</h3>
+          <p class="edu-place">Badan Eksekutif Mahasiswa — UNPAB</p>
+          <p>Aktif dalam kegiatan kemahasiswaan, mengelola konten visual dan dokumentasi event sebagai divisi kreatif.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ CONTACT ═══════════════ -->
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <div class="contact-left">
+        <div class="section-eyebrow reveal">Let's Talk</div>
+        <h2 class="contact-title reveal">Ada project<br/><span class="highlight-text">menarik?</span><br/>Hubungi saya!</h2>
+        <div class="contact-links reveal">
+          <a href="mailto:putrahidayat@email.com" class="clink">
+            <span class="clink-icon">✉</span>
+            <div><strong>Email</strong><span>putrahidayat@email.com</span></div>
+          </a>
+          <a href="https://github.com/" target="_blank" class="clink">
+            <span class="clink-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </span>
+            <div><strong>GitHub</strong><span>github.com/putrahidayat</span></div>
+          </a>
+          <a href="https://linkedin.com/" target="_blank" class="clink">
+            <span class="clink-icon">in</span>
+            <div><strong>LinkedIn</strong><span>linkedin.com/in/putrahidayat</span></div>
+          </a>
+          <a href="https://instagram.com/" target="_blank" class="clink">
+            <span class="clink-icon">IG</span>
+            <div><strong>Instagram</strong><span>@putrahidayat</span></div>
+          </a>
+        </div>
+      </div>
+      <div class="contact-right reveal">
+        <form class="contact-form" id="contactForm">
+          <div class="form-duo">
+            <div class="fgroup">
+              <label>Nama</label>
+              <input type="text" placeholder="Nama kamu" required />
+            </div>
+            <div class="fgroup">
+              <label>Email</label>
+              <input type="email" placeholder="email@kamu.com" required />
+            </div>
+          </div>
+          <div class="fgroup">
+            <label>Kebutuhan</label>
+            <select>
+              <option value="">Pilih jenis project</option>
+              <option>Web Development</option>
+              <option>Desain Grafis</option>
+              <option>Editing Video</option>
+              <option>Lainnya</option>
+            </select>
+          </div>
+          <div class="fgroup">
+            <label>Pesan</label>
+            <textarea rows="5" placeholder="Ceritakan project atau kebutuhanmu..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-fill btn-big">Kirim Pesan ✦</button>
+          <div class="form-ok" id="formSuccess">✅ Terkirim! Saya akan segera membalas.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer class="footer">
+    <div class="footer-top">
+      <span class="footer-logo">PH<span class="logo-dot">.</span></span>
+      <div class="footer-socials">
+        <a href="https://github.com/" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
+        <a href="https://instagram.com/" target="_blank">Instagram</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Putra Hidayat — Sistem Komputer, UNPAB Medan</span>
+      <a href="#hero" class="to-top">↑ Kembali ke atas</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
