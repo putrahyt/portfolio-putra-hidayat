@@ -152,13 +152,24 @@ document.querySelectorAll('.design-card').forEach(card => {
     const inner = document.createElement('div');
     inner.style.cssText = `width:100%; height:100%; background: ${computedBg}; display:flex; flex-direction:column; align-items:center; justify-content:center; gap: 1rem; padding: 2rem;`;
 
+    const imgEl = card.querySelector('.design-placeholder img');
     const emoji = card.querySelector('.design-emoji')?.textContent || '🎨';
-    inner.innerHTML = `
-      <span style="font-size:5rem">${emoji}</span>
-      <h3 style="font-family:'Outfit',sans-serif; font-size:1.5rem; font-weight:700; color:#fff; text-align:center;">${title}</h3>
-      <span style="font-family:'Outfit',sans-serif; background:rgba(255,255,255,0.15); color:#fff; padding:6px 18px; border-radius:100px; font-size:0.9rem;">${size}</span>
-      <p style="font-family:'Outfit',sans-serif; color:rgba(255,255,255,0.5); font-size:0.8rem; margin-top:1rem;">Ganti dengan gambar desain asli kamu</p>
-    `;
+
+    if (imgEl) {
+      // Kalau ada gambar, tampilkan gambar full
+      inner.style.padding = '0';
+      inner.style.background = '#fff';
+      inner.innerHTML = `
+        <img src="${imgEl.src}" style="width:100%; height:100%; object-fit:contain; border-radius:20px;" />
+      `;
+    } else {
+      // Kalau tidak ada gambar, tampilkan emoji seperti semula
+      inner.innerHTML = `
+        <span style="font-size:5rem">${emoji}</span>
+        <h3 style="font-family:'Outfit',sans-serif; font-size:1.5rem; font-weight:700; color:#fff; text-align:center;">${title}</h3>
+        <span style="font-family:'Outfit',sans-serif; background:rgba(255,255,255,0.15); color:#fff; padding:6px 18px; border-radius:100px; font-size:0.9rem;">${size}</span>
+      `;
+    }
 
     preview.appendChild(inner);
     overlay.appendChild(preview);
