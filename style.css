@@ -724,11 +724,11 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 /* ════════════════ CONTACT ════════════════ */
 .contact { padding: 0; background: var(--bg2); }
-.contact-inner { display: grid; grid-template-columns: 1fr 1.3fr; min-height: 80vh; }
+.contact-inner { display: grid; grid-template-columns: 1fr; min-height: 80vh; }
 
 .contact-left {
   background: linear-gradient(160deg, #f0047f 0%, #6d28d9 50%, #0099cc 100%);
-  padding: 5rem 3rem; display: flex; flex-direction: column; gap: 0;
+  padding: 5rem; display: flex; flex-direction: column; gap: 2rem;
   position: relative; overflow: hidden;
 }
 .contact-left::before {
@@ -736,15 +736,22 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   background-image: radial-gradient(circle, rgba(255,255,255,0.08) 1px, transparent 1px);
   background-size: 28px 28px;
 }
-.contact-left .section-eyebrow { background: rgba(255,255,255,0.15); border-color: rgba(255,255,255,0.3); color: #fff; }
+.contact-left .section-eyebrow {
+  background: rgba(255,255,255,0.15); border-color: rgba(255,255,255,0.3);
+  color: #fff; align-self: flex-start;
+}
+.contact-body {
+  display: flex; align-items: center; gap: 4rem;
+  position: relative; z-index: 1;
+}
 .contact-title {
-  font-family: var(--font-display); font-size: clamp(2.5rem, 5vw, 4rem);
-  line-height: 1.0; letter-spacing: 0.02em; margin-bottom: 3rem;
-  color: #fff; position: relative;
+  font-family: var(--font-display); font-size: clamp(2rem, 3.5vw, 3.5rem);
+  line-height: 1.0; letter-spacing: 0.02em; margin-bottom: 0;
+  color: #fff; flex-shrink: 0;
 }
 .contact-title .highlight-text { -webkit-text-fill-color: #fff; color: #fff; background: none; filter: drop-shadow(0 0 20px rgba(255,255,255,0.4)); }
 
-.contact-links { display: flex; flex-direction: column; gap: 1rem; position: relative; }
+.contact-links { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; position: relative; flex: 1; }
 .clink {
   display: flex; align-items: center; gap: 1rem;
   padding: 1rem 1.2rem; background: rgba(255,255,255,0.12);
@@ -824,6 +831,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .contact-inner { grid-template-columns: 1fr; }
   .contact-left { padding: 3rem 2rem; min-height: auto; }
   .contact-right { padding: 3rem 2rem; }
+  .contact-body { flex-direction: column; gap: 2rem; }
+  .contact-links { grid-template-columns: 1fr 1fr; }
 }
 
 @media (max-width: 768px) {
@@ -851,6 +860,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .proj-card-featured { flex-direction: column; }
   .proj-card-featured .proj-content { padding: 1.5rem; }
   .form-duo { grid-template-columns: 1fr; }
+  .contact-links { grid-template-columns: 1fr; }
   .about, .skills, .gallery, .projects, .education { padding: 70px 0; }
   .proj-grid { grid-template-columns: 1fr; }
   .proj-card-featured { flex-direction: column; }
@@ -867,4 +877,59 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .hero-btns { flex-direction: column; }
   .footer-top, .footer-bottom { flex-direction: column; gap: 1rem; text-align: center; }
   .footer-top { padding-bottom: 1rem; }
+}
+/* ── Project Image (ganti mockup browser) ── */
+.proj-img-wrap {
+  width: 100%; height: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  background: var(--bg2);
+}
+
+.proj-img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.proj-card:hover .proj-img {
+  transform: scale(1.04);
+}
+
+.proj-img-fallback {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  width: 100%; height: 100%;
+  background: linear-gradient(135deg, var(--bg2), #e8e8f5);
+  text-align: center;
+  padding: 2rem;
+}
+
+.proj-img-fallback span { font-size: 3rem; }
+
+.proj-img-fallback p {
+  font-size: 0.82rem;
+  color: var(--text2);
+  line-height: 1.6;
+}
+
+.proj-img-fallback code {
+  font-size: 0.78rem;
+  background: rgba(0,0,0,0.07);
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-family: monospace;
+  color: var(--pink);
+}
+
+.nav-logo-img {
+  height: 44px;
+  width: auto;
+  object-fit: contain;
+  display: block;
 }

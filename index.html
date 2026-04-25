@@ -17,7 +17,9 @@
   <!-- ═══════════════ NAVBAR ═══════════════ -->
   <header class="navbar" id="navbar">
     <div class="nav-inner">
-      <a href="#hero" class="nav-logo">PH<span class="logo-dot">.</span></a>
+      <a href="#hero" class="nav-logo">
+        <img src="files/logo1.png" alt="Logo Putra Hidayat" class="nav-logo-img" />
+      </a>
       <nav class="nav-links" id="navLinks">
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
@@ -98,7 +100,7 @@
             </div>
             <div class="num-divider"></div>
             <div class="num-item">
-              <span class="big-num">15<span class="num-plus">+</span></span>
+              <span class="big-num">20<span class="num-plus">+</span></span>
               <span class="num-desc">Desain Grafis</span>
             </div>
           </div>
@@ -493,7 +495,8 @@
     <div class="container">
       <div class="section-header reveal">
         <div class="section-eyebrow">Dev Projects</div>
-        <h2 class="section-title">Project <span class="highlight-text">Web</span></h2>
+        <!-- <h2 class="section-title">Project <span class="highlight-text">Web</span></h2> -->
+        <h2 class="section-title">Project</h2>
       </div>
 
       <div class="proj-grid">
@@ -501,40 +504,25 @@
         <!-- Project 1 — Featured / Big -->
         <div class="proj-card proj-card-featured reveal">
           <div class="proj-mockup">
-            <div class="mockup-browser">
-              <div class="mockup-bar">
-                <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
-                <div class="mockup-url">sistoko.local/shop</div>
-              </div>
-              <div class="mockup-screen mockup-shop">
-                <div class="ms-navbar"><div class="ms-logo"></div><div class="ms-nav-items"><span></span><span></span><span></span></div><div class="ms-cart">🛒</div></div>
-                <div class="ms-hero-shop">
-                  <div class="ms-hero-text">
-                    <div class="ms-h1"></div>
-                    <div class="ms-h2"></div>
-                    <div class="ms-btn-shop">Belanja Sekarang</div>
-                  </div>
-                  <div class="ms-hero-img">🛍️</div>
-                </div>
-                <div class="ms-products">
-                  <div class="ms-prod-card"><div class="ms-prod-img" style="background:linear-gradient(135deg,#ffd6ec,#f8a0c8)">👟</div><div class="ms-prod-info"><div class="ms-prod-name"></div><div class="ms-prod-price">Rp 299.000</div></div></div>
-                  <div class="ms-prod-card"><div class="ms-prod-img" style="background:linear-gradient(135deg,#cef4ff,#7dd8f5)">👜</div><div class="ms-prod-info"><div class="ms-prod-name"></div><div class="ms-prod-price">Rp 449.000</div></div></div>
-                  <div class="ms-prod-card"><div class="ms-prod-img" style="background:linear-gradient(135deg,#fff3b0,#ffd96a)">⌚</div><div class="ms-prod-info"><div class="ms-prod-name"></div><div class="ms-prod-price">Rp 199.000</div></div></div>
-                </div>
+            <div class="proj-img-wrap">
+              <img src="files/project1.png" alt="Sistem Toko Online" class="proj-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+              <div class="proj-img-fallback">
+                <span>🛒</span>
+                <p>Ganti dengan screenshot<br/><code>files/project1.png</code></p>
               </div>
             </div>
             <div class="proj-num-badge">01</div>
           </div>
           <div class="proj-content">
-            <div class="proj-cat-tag">E-Commerce</div>
-            <h3 class="proj-title">Sistem Toko Online</h3>
-            <p class="proj-desc">Aplikasi e-commerce lengkap dengan manajemen produk, keranjang belanja, sistem checkout, dan panel admin berbasis Laravel.</p>
+            <div class="proj-cat-tag">Web</div>
+            <h3 class="proj-title">Sistem Informasi Monitoring Magang</h3>
+            <p class="proj-desc">Sistem informasi untuk memonitor kegiatan peserta magang di instansi, mencakup absensi, laporan aktivitas, bimbingan, hingga penilaian peserta.</p>
             <div class="proj-tech">
-              <span>Laravel</span><span>PHP</span><span>MySQL</span><span>Bootstrap</span>
+              <span>PHP Native</span><span>Arsitektur MVC</span><span>MySQL</span><span>Bootstrap</span><span>PHPMailer</span><span>jQuery & AJAX</span><span>SweetAlert2</span>
             </div>
             <div class="proj-links">
-              <a href="#" class="proj-btn" target="_blank">Live Demo ↗</a>
-              <a href="https://github.com/" class="proj-btn proj-btn-ghost" target="_blank">
+              <!-- <a href="#" class="proj-btn" target="_blank">Live Demo ↗</a> -->
+              <a href="https://github.com/putrahyt/sistem-informasi-monitoring-magang" class="proj-btn proj-btn-ghost" target="_blank">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
                 GitHub
               </a>
@@ -545,46 +533,25 @@
         <!-- Project 2 -->
         <div class="proj-card reveal">
           <div class="proj-mockup">
-            <div class="mockup-browser mockup-sm">
-              <div class="mockup-bar">
-                <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
-                <div class="mockup-url">siswa.local/dashboard</div>
-              </div>
-              <div class="mockup-screen mockup-dashboard">
-                <div class="ms-sidebar">
-                  <div class="ms-sb-logo"></div>
-                  <div class="ms-sb-item active"></div>
-                  <div class="ms-sb-item"></div>
-                  <div class="ms-sb-item"></div>
-                  <div class="ms-sb-item"></div>
-                </div>
-                <div class="ms-main">
-                  <div class="ms-stats-row">
-                    <div class="ms-stat-box" style="background:linear-gradient(135deg,#e8007a,#6d28d9)"><span class="ms-stat-num">248</span><span class="ms-stat-lbl">Siswa</span></div>
-                    <div class="ms-stat-box" style="background:linear-gradient(135deg,#0099cc,#1d4ed8)"><span class="ms-stat-num">12</span><span class="ms-stat-lbl">Kelas</span></div>
-                    <div class="ms-stat-box" style="background:linear-gradient(135deg,#00a878,#0099cc)"><span class="ms-stat-num">96%</span><span class="ms-stat-lbl">Hadir</span></div>
-                  </div>
-                  <div class="ms-table-preview">
-                    <div class="ms-table-row ms-table-head"><span>Nama</span><span>Kelas</span><span>Nilai</span></div>
-                    <div class="ms-table-row"><span></span><span>X-A</span><span class="ms-grade green">A</span></div>
-                    <div class="ms-table-row"><span></span><span>X-B</span><span class="ms-grade yellow">B+</span></div>
-                    <div class="ms-table-row"><span></span><span>XI-A</span><span class="ms-grade green">A-</span></div>
-                  </div>
-                </div>
+            <div class="proj-img-wrap">
+              <img src="files/project2.png" alt="Sistem Manajemen Siswa" class="proj-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+              <div class="proj-img-fallback">
+                <span>📋</span>
+                <p>Ganti dengan screenshot<br/><code>files/project2.png</code></p>
               </div>
             </div>
             <div class="proj-num-badge">02</div>
           </div>
           <div class="proj-content">
-            <div class="proj-cat-tag proj-cat-blue">Education</div>
-            <h3 class="proj-title">Sistem Manajemen Siswa</h3>
-            <p class="proj-desc">CRUD data siswa, nilai, absensi dengan antarmuka responsif dan dashboard admin lengkap.</p>
+            <div class="proj-cat-tag proj-cat-blue">web</div>
+            <h3 class="proj-title">Laporanku</h3>
+            <p class="proj-desc">Website laporan harian dan akhir untuk peserta magang di DISKOMINFO Medan.</p>
             <div class="proj-tech">
-              <span>PHP</span><span>HTML/CSS</span><span>Bootstrap</span><span>MySQL</span>
+              <span>PHP Native</span><span>Arsitektur MVC</span><span>MySQL</span><span>Bootstrap</span><span>PHPMailer</span><span>jQuery & AJAX</span><span>SweetAlert2</span>
             </div>
             <div class="proj-links">
-              <a href="#" class="proj-btn" target="_blank">Live Demo ↗</a>
-              <a href="https://github.com/" class="proj-btn proj-btn-ghost" target="_blank">
+              <!-- <a href="#" class="proj-btn" target="_blank">Live Demo ↗</a> -->
+              <a href="https://github.com/putrahyt/laporanku" class="proj-btn proj-btn-ghost" target="_blank">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
                 GitHub
               </a>
@@ -595,42 +562,25 @@
         <!-- Project 3 -->
         <div class="proj-card reveal">
           <div class="proj-mockup">
-            <div class="mockup-browser mockup-sm">
-              <div class="mockup-bar">
-                <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
-                <div class="mockup-url">produk-landing.vercel.app</div>
-              </div>
-              <div class="mockup-screen mockup-landing">
-                <div class="ms-lp-hero">
-                  <div class="ms-lp-blob1"></div>
-                  <div class="ms-lp-blob2"></div>
-                  <div class="ms-lp-content">
-                    <div class="ms-lp-tag">✨ New Product</div>
-                    <div class="ms-lp-h1"></div>
-                    <div class="ms-lp-h2"></div>
-                    <div class="ms-lp-cta">Get Started →</div>
-                  </div>
-                  <div class="ms-lp-visual">📱</div>
-                </div>
-                <div class="ms-lp-features">
-                  <div class="ms-feat">⚡<span></span></div>
-                  <div class="ms-feat">🎯<span></span></div>
-                  <div class="ms-feat">🔒<span></span></div>
-                </div>
+            <div class="proj-img-wrap">
+              <img src="files/project3.png" alt="Landing Page Produk" class="proj-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+              <div class="proj-img-fallback">
+                <span>🎨</span>
+                <p>Ganti dengan screenshot<br/><code>files/project3.png</code></p>
               </div>
             </div>
             <div class="proj-num-badge">03</div>
           </div>
           <div class="proj-content">
-            <div class="proj-cat-tag proj-cat-orange">Marketing</div>
-            <h3 class="proj-title">Landing Page Produk</h3>
-            <p class="proj-desc">Halaman pemasaran modern dan responsif dengan animasi scroll, visual menarik, dan optimasi konversi tinggi.</p>
+            <div class="proj-cat-tag proj-cat-orange">Desktop App berbasis Web</div>
+            <h3 class="proj-title">Penjualan Ayam</h3>
+            <p class="proj-desc">Aplikasi desktop untuk pencatatan dan laporan penjualan/pembelian ayam harian. Dibangun dengan React + Node.js + MySQL, dikemas menjadi aplikasi desktop menggunakan Electron.</p>
             <div class="proj-tech">
-              <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+              <span>React</span><span>Node.js</span><span>Express</span><span>MySQL</span><span>Electron</span>
             </div>
             <div class="proj-links">
-              <a href="#" class="proj-btn" target="_blank">Live Demo ↗</a>
-              <a href="https://github.com/" class="proj-btn proj-btn-ghost" target="_blank">
+              <!-- <a href="#" class="proj-btn" target="_blank">Live Demo ↗</a> -->
+              <a href="https://github.com/putrahyt/app-laporan-ayam" class="proj-btn proj-btn-ghost" target="_blank">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
                 GitHub
               </a>
@@ -653,27 +603,34 @@
       <div class="edu-grid">
 
         <div class="edu-card edu-card-main reveal">
-          <div class="edu-year">2021 — Sekarang</div>
+          <div class="edu-year">2021 — 2025 </div>
           <div class="edu-icon">🎓</div>
           <h3>S1 Sistem Komputer</h3>
           <p class="edu-place">Universitas Pembangunan Panca Budi</p>
-          <p>Fokus pada arsitektur komputer, pemrograman web, jaringan, dan sistem operasi. Aktif mengerjakan project akademik dan mandiri.</p>
+          <p>• Penerima Beasiswa KIP Kuliah (2021-2025).</p><br>
+          <p>• 15 Besar Lomba Essay Nasional Formakip dalam lomba Formakip Fair Essay Competition Institut Agama Islam Negeri Takengon (2023).</p><br>
+          <p>• Juara 3 Lomba Desain Poster dalam kompetisi Komper 1.0 Universitas Pembangunan Panca Budi (2022).</p><br>
+          <p>• Peserta Lomba Essay Nasional UNNES dalam lomba National Essay Competition (NEC) Universitas Negeri Semarang (2022).</p><br>
+          <p>• Juri Lomba Poster dan Fotografi dalam lomba Permadiksi Prestas x Komper Universitas Pembangunan Panca Budi (2024).</p><br>
         </div>
 
         <div class="edu-card reveal">
-          <div class="edu-year">2019 — 2021</div>
-          <div class="edu-icon">🏫</div>
-          <h3>SMK Negeri 1 Medan</h3>
-          <p class="edu-place">Teknik Komputer & Jaringan</p>
-          <p>Mempelajari dasar-dasar jaringan komputer, pemrograman web, dan hardware. Lulus dengan predikat baik.</p>
+          <div class="edu-year">2022 - 2023</div>
+          <div class="edu-icon">👥</div>
+          <h3>ORGANISASI PERMADIKSI UNPAB</h3>
+          <p class="edu-place">Kepala Bidang Kominfo</p>
+          <p>•	Mengelola akun sosial media Permadiksi UNPAB melalui pembuatan dan publikasi konten berupa foto, video dan materi kreatif lainnya serta merancang dan mengembangkan website profil organisasi sebagai media informasi resmi.</p><br>
+          <p>•	Berkolaborasi dengan divisi lain terkait desain, dokumentasi dan publikasi program kerja divisi lain.</p><br>
+          <p>•	Berhasil menyelenggarakan lomba KOMPER 2.0 (Kominfo Permadiksi UNPAB Competition) ajang perlombaan fotografi dan desain poster yang diikuti oleh mahasiswa Universitas Pembangunan Panca Budi.</p>
         </div>
 
         <div class="edu-card reveal">
-          <div class="edu-year">2022 — Sekarang</div>
-          <div class="edu-icon">🤝</div>
-          <h3>Anggota Aktif BEM</h3>
-          <p class="edu-place">Badan Eksekutif Mahasiswa — UNPAB</p>
-          <p>Aktif dalam kegiatan kemahasiswaan, mengelola konten visual dan dokumentasi event sebagai divisi kreatif.</p>
+          <div class="edu-year">2022 - 2023</div>
+          <div class="edu-icon">👥</div>
+          <h3>ORGANISASI UPM PKRKM</h3>
+          <p class="edu-place">Staff Bidang Kominfo</p>
+          <p>•	Membantu publikasi, desain dan dokumentasi dalam kegiatan Temu Ilmiah Mahasiswa (TIMNAS) UNPAB tahun 2022 dan 2023</p><br>
+          <p>•	Membantu publikasi, desain dan dokumentasi dalam kegiatan Educamp 2023</p>
         </div>
 
       </div>
@@ -685,29 +642,31 @@
     <div class="contact-inner">
       <div class="contact-left">
         <div class="section-eyebrow reveal">Let's Talk</div>
+        <div class="contact-body">
         <h2 class="contact-title reveal">Ada project<br/><span class="highlight-text">menarik?</span><br/>Hubungi saya!</h2>
         <div class="contact-links reveal">
-          <a href="mailto:putrahidayat@email.com" class="clink">
+          <a href="mailto:putrahidayat629@gmail.com" class="clink">
             <span class="clink-icon">✉</span>
-            <div><strong>Email</strong><span>putrahidayat@email.com</span></div>
+            <div><strong>Email</strong><span>putrahidayat629@gmail.com</span></div>
           </a>
-          <a href="https://github.com/" target="_blank" class="clink">
+          <a href="https://github.com/putrahyt" target="_blank" class="clink">
             <span class="clink-icon">
               <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
             </span>
-            <div><strong>GitHub</strong><span>github.com/putrahidayat</span></div>
+            <div><strong>GitHub</strong><span>github.com/putrahyt</span></div>
           </a>
-          <a href="https://linkedin.com/" target="_blank" class="clink">
+          <a href="https://www.linkedin.com/in/putrahyt/" target="_blank" class="clink">
             <span class="clink-icon">in</span>
-            <div><strong>LinkedIn</strong><span>linkedin.com/in/putrahidayat</span></div>
+            <div><strong>LinkedIn</strong><span>linkedin.com/in/putrahyt</span></div>
           </a>
-          <a href="https://instagram.com/" target="_blank" class="clink">
+          <a href="https://www.instagram.com/putttra.h/" target="_blank" class="clink">
             <span class="clink-icon">IG</span>
-            <div><strong>Instagram</strong><span>@putrahidayat</span></div>
+            <div><strong>Instagram</strong><span>@putttra.h</span></div>
           </a>
         </div>
+        </div><!-- /contact-body -->
       </div>
-      <div class="contact-right reveal">
+      <!-- <div class="contact-right reveal">
         <form class="contact-form" id="contactForm">
           <div class="form-duo">
             <div class="fgroup">
@@ -736,23 +695,19 @@
           <button type="submit" class="btn btn-fill btn-big">Kirim Pesan ✦</button>
           <div class="form-ok" id="formSuccess">✅ Terkirim! Saya akan segera membalas.</div>
         </form>
-      </div>
+      </div> -->
     </div>
   </section>
 
   <!-- ═══════════════ FOOTER ═══════════════ -->
   <footer class="footer">
     <div class="footer-top">
-      <span class="footer-logo">PH<span class="logo-dot">.</span></span>
+      <span class="footer-logo"><img src="files/logo1.png" alt="Logo Putra Hidayat" class="nav-logo-img" /></span>
       <div class="footer-socials">
-        <a href="https://github.com/" target="_blank">GitHub</a>
-        <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
-        <a href="https://instagram.com/" target="_blank">Instagram</a>
+        <a href="https://github.com/putrahyt" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/putrahyt/" target="_blank">LinkedIn</a>
+        <a href="https://www.instagram.com/putttra.h/" target="_blank">Instagram</a>
       </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2025 Putra Hidayat — Sistem Komputer, UNPAB Medan</span>
-      <a href="#hero" class="to-top">↑ Kembali ke atas</a>
     </div>
   </footer>
 
